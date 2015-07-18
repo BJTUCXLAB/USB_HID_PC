@@ -1,18 +1,18 @@
-﻿生成启动时间为 2015/7/18 10:40:15。
-     1>项目“D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\PC_HID.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 15/7/18 19:58:31。
+     1>项目“C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\PC_HID.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\PC_HID.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt STM32_HID.cpp
+         C:\visual studio\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\PC_HID.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt STM32_HID.cpp
          STM32_HID.cpp
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\Release\PC_HID.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\Release\PC_HID.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\Release\PC_HID.lib" /MACHINE:X86 /SAFESEH Release\PC_HID.obj
+         C:\visual studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\Release\PC_HID.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\Release\PC_HID.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\Release\PC_HID.lib" /MACHINE:X86 /SAFESEH Release\PC_HID.obj
          Release\stdafx.obj
          Release\STM32_HID.obj
          Release\usb.obj
          正在生成代码
          已完成代码的生成
-         PC_HID.vcxproj -> D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\Release\PC_HID.exe
-     1>已完成生成项目“D:\琐事\braille\USB_HID_PC_STM32\USB_HID_PC_源码\PC_HID\PC_HID.vcxproj”(Build 个目标)的操作。
+         PC_HID.vcxproj -> C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\Release\PC_HID.exe
+     1>已完成生成项目“C:\Users\youqilin\Desktop\盲文\PC驱动\USB_HID_PC\PC_HID.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.51
+已用时间 00:00:00.68

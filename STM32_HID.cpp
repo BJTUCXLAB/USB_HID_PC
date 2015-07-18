@@ -23,7 +23,7 @@ extern "C" {
 /* Private define ------------------------------------------------------------*/
 #define     USB_VID			0x0483	//这个值在单片机程序的设备描述符中定义 
 #define     USB_PID			0x5750	//这个值在单片机程序的设备描述符中定义   
-#define		REPORT_COUNT	64		//端点长度
+#define		REPORT_COUNT	100   	//端点长度//07.18-YQL：不能小于64，我先改STM32了，应该是32描述里的问题
 /* Private function prototypes -----------------------------------------------*/
 HANDLE OpenMyHIDDevice(int overlapped);
 void HIDSampleFunc() ;
@@ -64,9 +64,10 @@ void HIDSampleFunc(void)
 	// 写入数据到设备，注意，第三个参数值必须为REPORT_COUNT+1，否则会返回1784错误
 	if (!WriteFile(hDev, reportBuf, REPORT_COUNT+1, &bytes, NULL)){           
 		printf("write data error! %d\n",GetLastError());
-		return;    
+		printf("按任意键退出！");getchar();
+		//return;    
 	}else{
-		printf("成功向设备写出%d个数据... \n",bytes);
+		printf("成功向设备写出%d个数据... \n", REPORT_COUNT);
 	}
 	printf("开始从设备读取数据...\n");
 	// 从设备读取数据，注意，第三个参数值必须大于等于REPORT_COUNT+1，否则会返回1784错误
@@ -74,14 +75,15 @@ void HIDSampleFunc(void)
 		printf("read data error! %d\n",GetLastError());
 		return;    
 	}else{
-		printf("成功向设备读出%d个数据... \n",bytes);
+		printf("成功向设备读出%d个数据... \n", REPORT_COUNT);
 	}
 	printf("设备返回的数据为：\n");
 	//显示读取回来的数据
 	for(int i=0;i<REPORT_COUNT;i++){
 		printf("0x%02X ",recvDataBuf[i+1]);
 	}
-	printf("\n\r");
+	printf("\n\r按任意键结束");
+	getchar();
 }  
 /**
   * @brief  打开HID设备
